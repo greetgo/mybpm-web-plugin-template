@@ -1,10 +1,13 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: '',
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'mybpm-web-console-plugin';
+
+  ngOnInit() {
+    console.log("zY7kYL3g8k :: title = ", this.title)
+  }
 }
