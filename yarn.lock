@@ -280,6 +280,15 @@
   dependencies:
     tslib "^2.2.0"
 
+"@angular/cdk@11.2.10":
+  version "11.2.10"
+  resolved "http://192.168.35.51/@angular%2fcdk/-/cdk-11.2.10.tgz#0ebf2c44f97f4f123988e8f829756cf893e803a1"
+  integrity sha512-Cq1dTQDGcqfB2ks8q3q4HPf7kEXU3FCB/OC5XYGMhs8tUyFTabhmXAcfkiBA4YO8YPWRc8FKrJsE1q4nV8vPKQ==
+  dependencies:
+    tslib "^2.0.0"
+  optionalDependencies:
+    parse5 "^5.0.0"
+
 "@angular/cli@^12.0.0":
   version "12.2.14"
   resolved "http://192.168.35.51/@angular%2fcli/-/cli-12.2.14.tgz#7f77c4614bd220c02ea3bb0b3b1181c258d141ce"
@@ -352,6 +361,13 @@
   integrity sha512-Y6ANWoVXTlsjQZ/6p0QbLLSCRUAz/hTOnQ769x7qhoMIvNXqSBllgp5TON83ZGWV9TcQMLS694liSqi8qAZMyw==
   dependencies:
     tslib "^2.2.0"
+
+"@angular/material@11.2.10":
+  version "11.2.10"
+  resolved "http://192.168.35.51/@angular%2fmaterial/-/material-11.2.10.tgz#2ad9761b784646dc15c8d912238e53cb89582a4e"
+  integrity sha512-itylLtTloyCrmtotccVzplso7DGoiFdN91ud2sopGacTpfKVkw4tO5nIWRGWDmuu3dvHCqGo3h6EoZN0l9G+Wg==
+  dependencies:
+    tslib "^2.0.0"
 
 "@angular/platform-browser-dynamic@^12.0.0":
   version "12.2.15"
@@ -1558,6 +1574,13 @@
     loader-utils "^2.0.0"
     merge-source-map "^1.1.0"
     schema-utils "^2.7.0"
+
+"@mybpm.workspace/menu-item@^0.0.2":
+  version "0.0.2"
+  resolved "http://192.168.35.51/@mybpm.workspace%2fmenu-item/-/menu-item-0.0.2.tgz#7dd98f11e8dec1d884f4771b76c1de2dd243ec46"
+  integrity sha512-/l5JnGCDXw10fw0Nz+a/Cdp0xRYCi1RFi5TEDczmDduhKaLaonB5tug3orlCQqsgl/FfvWd+tEp2LDvqy15W/w==
+  dependencies:
+    tslib "^2.1.0"
 
 "@ngtools/webpack@12.2.14":
   version "12.2.14"
@@ -6211,6 +6234,11 @@ parse5-sax-parser@^6.0.1:
   dependencies:
     parse5 "^6.0.1"
 
+parse5@^5.0.0:
+  version "5.1.1"
+  resolved "http://192.168.35.51/parse5/-/parse5-5.1.1.tgz#f68e4e5ba1852ac2cadc00f4555fff6c2abb6178"
+  integrity sha512-ugq4DFI0Ptb+WWjAdOK16+u/nHfiIrcE+sh8kZMaM0WllQKLI9rOUq6c2b7cwPkXdzfQESqvoqK6ug7U/Yyzug==
+
 parse5@^6.0.1:
   version "6.0.1"
   resolved "https://registry.npmjs.org/parse5/-/parse5-6.0.1.tgz"
@@ -8160,7 +8188,7 @@ tslib@2.3.0:
   resolved "http://192.168.35.51/tslib/-/tslib-2.3.0.tgz#803b8cdab3e12ba581a4ca41c8839bbb0dacb09e"
   integrity sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==
 
-tslib@2.3.1, tslib@^2.0.0, tslib@^2.2.0, tslib@^2.3.0:
+tslib@2.3.1, tslib@^2.0.0, tslib@^2.1.0, tslib@^2.2.0, tslib@^2.3.0:
   version "2.3.1"
   resolved "http://192.168.35.51/tslib/-/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
   integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==

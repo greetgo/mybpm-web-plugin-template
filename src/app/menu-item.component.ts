@@ -1,4 +1,5 @@
 import {Component, OnInit} from "@angular/core";
+import {MenuItem} from "@mybpm.workspace/menu-item";
 
 @Component({
   selector: 'app-menu-item',
@@ -6,7 +7,14 @@ import {Component, OnInit} from "@angular/core";
   styleUrls: ['./menu-item.component.scss']
 })
 export class MenuItemComponent implements OnInit {
+
+  item: MenuItem | undefined;
+
   ngOnInit() {
-    console.log("jk37H7V41K :: MenuItemComponent")
+    this.item = {
+      id: 'menu-report',
+      type: "REPORT",
+      displayName: 'Отчеты'
+    };
   }
 }
