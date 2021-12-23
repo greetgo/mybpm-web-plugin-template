@@ -1,9 +1,9 @@
 {
-  "name": "mybpm-web-console-plugin",
+  "name": "mybpm-web-menu-plugin",
   "version": "0.0.0",
   "scripts": {
-    "serve:plugin": "ng serve -o",
-    "build:plugin": "ng build mybpm-web-console-plugin --prod"
+    "serve:plugin": "ng serve",
+    "build:plugin": "ng build mybpm-web-menu-plugin --prod"
   },
   "private": true,
   "dependencies": {

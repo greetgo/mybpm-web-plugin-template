@@ -14,7 +14,7 @@ module.exports = {
       library: {type: 'var', name: 'plugins'},
       filename: 'plugin.js',
       exposes: {
-        './PluginConsole': './src/app/app.component.ts'
+        './MenuItemPlugin': './src/app/menu-item.component.ts',
       },
     })
   ]

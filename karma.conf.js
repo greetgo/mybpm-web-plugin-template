@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/mybpm-web-console-plugin'),
+      dir: require('path').join(__dirname, './coverage/mybpm-web-menu-plugin'),
       subdir: '.',
       reporters: [
         { type: 'html' },

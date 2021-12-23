@@ -1,1 +1,1 @@
-# Mybpm - console plugin
+# Mybpm - menu plugin
