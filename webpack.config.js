@@ -33,10 +33,8 @@ module.exports = {
       shared: share({
         '@angular/core': {singleton: true, eager: true, requiredVersion: '^12.0.0'},
         '@angular/common': {singleton: true, eager: true, requiredVersion: '^12.0.0'},
-        '@angular/forms': {singleton: true, eager: true},
-        '@angular/router': {singleton: true, eager: true},
-        '@angular/cdk': {singleton: true, eager: true},
-        '@angular/material': {singleton: true, eager: true},
+        '@angular/forms': {singleton: true, eager: true, requiredVersion: '^12.0.0'},
+        '@angular/router': {singleton: true, eager: true, requiredVersion: '^12.0.0'},
 
         ...sharedMappings.getDescriptors(),
       })
