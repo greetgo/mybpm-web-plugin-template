@@ -2,9 +2,9 @@ import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: '<h1>Lala</h1>',
+  template: '<router-outlet></router-outlet>',
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
 
 
   ngOnInit() {

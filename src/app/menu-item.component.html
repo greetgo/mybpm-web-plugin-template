@@ -1,1 +1,4 @@
-<mybpm-menu-item [item]="item"></mybpm-menu-item>
+<mybpm-menu-item
+  [item]="item"
+  (menuNavigated)="navigateTo($event)"
+></mybpm-menu-item>

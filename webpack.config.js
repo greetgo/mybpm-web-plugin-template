@@ -30,21 +30,15 @@ module.exports = {
         './MenuItemPlugin': './src/app/menu-item.component.ts',
       },
       shared: share({
+        '@angular/core': {singleton: true, eager: true},
+        '@angular/common': {singleton: true, eager: true},
+        '@angular/forms': {singleton: true, eager: true},
+        '@angular/router': {singleton: true, eager: true},
+        '@angular/cdk': {singleton: true, eager: true},
+        '@angular/material': {singleton: true, eager: true},
+
         ...sharedMappings.getDescriptors(),
-        '@angular/core': {
-          singleton: true,
-        },
-        '@angular/common': {
-          singleton: true,
-        },
-        '@angular/forms': {
-          singleton: true,
-        },
-        '@angular/router': {
-          singleton: true,
-        },
       })
     }),
-    sharedMappings.getPlugin()
   ],
 };
