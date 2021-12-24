@@ -28,6 +28,7 @@ module.exports = {
       filename: 'plugin.js',
       exposes: {
         './MenuItemPlugin': './src/app/menu-item.component.ts',
+        './ExamplePagePlugin': './src/app/example-page/example-page.module',
       },
       shared: share({
         '@angular/core': {singleton: true, eager: true},
