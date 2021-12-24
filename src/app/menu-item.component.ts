@@ -29,7 +29,7 @@ export class MenuItemComponent implements OnInit {
       id: 'menu-element-1',
       icon: 'no-color-info',
       displayName: 'Тестовое меню',
-      route: '/example-page'
+      route: 'example-page'
     };
   }
 

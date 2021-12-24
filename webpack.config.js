@@ -31,8 +31,8 @@ module.exports = {
         './ExamplePagePlugin': './src/app/example-page/example-page.module',
       },
       shared: share({
-        '@angular/core': {singleton: true, eager: true},
-        '@angular/common': {singleton: true, eager: true},
+        '@angular/core': {singleton: true, eager: true, requiredVersion: '^12.0.0'},
+        '@angular/common': {singleton: true, eager: true, requiredVersion: '^12.0.0'},
         '@angular/forms': {singleton: true, eager: true},
         '@angular/router': {singleton: true, eager: true},
         '@angular/cdk': {singleton: true, eager: true},
