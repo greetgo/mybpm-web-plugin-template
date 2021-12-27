@@ -1,9 +1,9 @@
 {
-  "name": "mybpm-web-menu-plugin",
+  "name": "mybpm-web-plugin-example",
   "version": "0.0.0",
   "scripts": {
     "serve:plugin": "ng serve",
-    "build:plugin": "ng build mybpm-web-menu-plugin --prod"
+    "build:plugin": "ng build mybpm-web-plugin-example --prod"
   },
   "private": true,
   "dependencies": {

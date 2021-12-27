@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "mybpm-web-menu-plugin": {
+    "mybpm-web-plugin-example": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -16,7 +16,7 @@
         "build": {
           "builder": "ngx-build-plus:browser",
           "options": {
-            "outputPath": "dist/mybpm-web-menu-plugin",
+            "outputPath": "dist/mybpm-web-plugin-example",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,13 +66,13 @@
         "serve": {
           "builder": "ngx-build-plus:dev-server",
           "options": {
-            "browserTarget": "mybpm-web-menu-plugin:build",
+            "browserTarget": "mybpm-web-plugin-example:build",
             "port": 4201,
             "extraWebpackConfig": "webpack.config.js"
           },
           "configurations": {
             "production": {
-              "browserTarget": "mybpm-web-menu-plugin:build:production",
+              "browserTarget": "mybpm-web-plugin-example:build:production",
               "extraWebpackConfig": "webpack.config.js"
             }
           }
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mybpm-web-menu-plugin:build"
+            "browserTarget": "mybpm-web-plugin-example:build"
           }
         },
         "test": {
@@ -104,5 +104,5 @@
       }
     }
   },
-  "defaultProject": "mybpm-web-menu-plugin"
+  "defaultProject": "mybpm-web-plugin-example"
 }
