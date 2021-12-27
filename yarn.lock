@@ -1575,10 +1575,10 @@
     merge-source-map "^1.1.0"
     schema-utils "^2.7.0"
 
-"@mybpm.workspace/menu-item@^0.0.11":
-  version "0.0.11"
-  resolved "http://192.168.35.51/@mybpm.workspace%2fmenu-item/-/menu-item-0.0.11.tgz#acdec101ba5a046fb00ba56bde5cd946da980e76"
-  integrity sha512-lpSlVJ27z5E/i1npFGSQS0S4Hk4NO39xtL8czYwSyQ+vXT2E2DIh1yRekqQ8ezAKZ+lf68o8e/S34iRodQGTTQ==
+"@mybpm.workspace/menu-item@^0.0.13":
+  version "0.0.13"
+  resolved "http://192.168.35.51/@mybpm.workspace%2fmenu-item/-/menu-item-0.0.13.tgz#57df8ffe34a15edf4f1aa02f3d2379d270768c38"
+  integrity sha512-jw2a27VpfmTzXioa4UBbsqqhvvNnkh4TpGW0gyOCUxTwHMzUTnlgoqIvBl7ln/eaucQ4wN9/byhH0Q7Kv2lFpw==
   dependencies:
     tslib "^2.1.0"
 
