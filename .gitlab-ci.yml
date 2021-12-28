@@ -1,0 +1,39 @@
+before_script:
+  - env | sort
+  - node -v
+  - whereis node
+
+.parentMasterJob:
+  rules:
+    - if: '$CI_COMMIT_TITLE =~ /^skip:/'
+      when: never
+    - if: '$CI_COMMIT_TITLE =~ /^SCRIPT:/'
+      when: never
+    - if: '$CI_COMMIT_REF_NAME == "master"'
+    - if: '$CI_COMMIT_REF_NAME == "master-test-ci"'
+
+stages:
+  - buildImages
+
+#cache:
+#  key: '11'
+#  paths:
+#    - node_modules/
+#  policy: pull-push
+
+buildImages:
+  extends: .parentMasterJob
+  stage: buildImages
+  script:
+    - docker rmi $(docker images --filter=reference='dockerhub.mybpm.kz/mybpm-web-with-*' -q) || true
+    - docker rmi $(docker images -f "dangling=true" -q) || true
+    - git remote set-url --push origin git@${CI_SERVER_HOST}:${CI_PROJECT_PATH}.git
+    - git remote set-url        origin git@${CI_SERVER_HOST}:${CI_PROJECT_PATH}.git
+    - git checkout ${CI_COMMIT_BRANCH}
+    - git pull origin ${CI_COMMIT_BRANCH}
+    - bash docker/push.bash
+    - git tag "$(bash docker/meta/tag-name.bash)" || true
+    - git push origin "$(bash docker/meta/tag-name.bash)"
+    - git pull origin ${CI_COMMIT_BRANCH}
+    - bash docker/inc-version-and-commit.bash
+    - git push origin ${CI_COMMIT_BRANCH}

@@ -1,0 +1,21 @@
+[
+  {
+    "pluginProjectName": "plugins",
+    "path": "plugins/mybpm-web-plugin-template/plugin.js",
+    "plugins": [
+      {
+        "key": "menu-item-plugin",
+        "type": "MENU_ITEM",
+        "exposedModule": "./MenuItemPlugin",
+        "ngModuleName": "MenuItemComponent"
+      },
+      {
+        "key": "example-page-plugin",
+        "type": "PAGE",
+        "exposedModule": "./ExamplePagePlugin",
+        "ngModuleName": "ExamplePageModule",
+        "route": "example-page"
+      }
+    ]
+  }
+]
