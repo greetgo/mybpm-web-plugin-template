@@ -1,6 +1,6 @@
 {
   "name": "mybpm-web-plugin-template",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "serve:plugin": "ng serve",
     "build:plugin": "ng build mybpm-web-plugin-template --prod"
