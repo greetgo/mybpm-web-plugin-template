@@ -6,4 +6,4 @@ CORE_DIR="$(bash core-dir.bash)"
 
 echo "CORE_DIR=$CORE_DIR"
 
-node ../lib/merge-plugin-config.js ./plugins-config.json "$CORE_DIR/apps/mybpm-web/src/plugins/plugins-config.json"
+node ../lib/merge-plugin-config.js ../lib/plugins-config.json "$CORE_DIR/apps/mybpm-web/src/plugins/plugins-config.json"

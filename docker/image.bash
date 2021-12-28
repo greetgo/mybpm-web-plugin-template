@@ -13,7 +13,7 @@ cd ../
 ng build $PROJECT_NAME --prod
 
 cp -rf "./dist" "./docker/dist"
-cp -rf "./docker/meta/plugins-config.json" "./docker/dist"
+cp -rf "./docker/lib/plugins-config.json" "./docker/dist"
 
 cd "${HERE}" || exit 113
 
