@@ -8,4 +8,4 @@ node lib/inc-version-in-file.js "$VERSION_FILE"
 
 VERSION="$(bash ./meta/version.bash)"
 
-git commit -m "SCRIPT: Automatically increment version to $VERSION"
+git commit -m "SCRIPT: Automatically increment version to $VERSION" -- "$VERSION_FILE"
