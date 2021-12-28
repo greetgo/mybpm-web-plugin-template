@@ -3,7 +3,7 @@
 cd "$(dirname "$0")" || exit 113
 
 HERE=$PWD
-PROJECT_NAME=mybpm-web-plugin-example
+PROJECT_NAME=mybpm-web-plugin-template
 IMAGE_NAME="$(bash ./meta/name.bash)"
 VERSION="$(bash ./meta/version.bash)"
 

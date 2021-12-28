@@ -1,1 +1,1 @@
-# Mybpm - menu plugin
+# mybpm-web - template plugin

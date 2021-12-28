@@ -12,7 +12,7 @@ for (const x of srcConfigJson) {
   configMap.set(x.pluginProjectName, x);
 }
 
-try {
+if (fs.existsSync(targetFile)) {
   const targetConfigJsonText = fs.readFileSync(targetFile, "utf-8");
   const targetConfigJson = JSON.parse(targetConfigJsonText);
 
@@ -22,6 +22,6 @@ try {
   }
 
   fs.writeFileSync(targetFile, JSON.stringify(Array.from(configMap.values())));
-} catch (e) {
+} else {
   fs.writeFileSync(targetFile, JSON.stringify(srcConfigJson));
 }

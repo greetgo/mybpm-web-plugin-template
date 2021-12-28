@@ -2,6 +2,7 @@
 
 cd "$(dirname "$0")" || exit 113
 
-RETE=$(cat ../../package.json | jq -r .version)
+# shellcheck disable=SC2002
+RETE=$(cat "../../package.json" | jq -r .version)
 
 echo -n "$RETE"
