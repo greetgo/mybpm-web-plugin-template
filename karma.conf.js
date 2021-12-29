@@ -25,6 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
+      ///MODIFY replace template {PLUGIN_NAME.under}
       dir: require('path').join(__dirname, './coverage/mybpm-web-plugin-template'),
       subdir: '.',
       reporters: [
