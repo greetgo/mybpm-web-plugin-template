@@ -4,7 +4,7 @@ cd "$(dirname "$0")" || exit 113
 
 HERE=$PWD
 
-###MODIFY replace template {PLUGIN_NAME.under}
+###MODIFY replace template {PLUGIN_NAME.dashed}
 PROJECT_NAME=mybpm-web-plugin-template
 
 IMAGE_NAME="$(bash ./meta/name.bash)"
