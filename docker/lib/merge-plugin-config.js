@@ -21,7 +21,35 @@ if (fs.existsSync(targetFile)) {
     configMap.set(x.pluginProjectName, x);
   }
 
-  fs.writeFileSync(targetFile, JSON.stringify(Array.from(configMap.values()), null, 2));
+  writeFileSyncRecursive(targetFile, JSON.stringify(Array.from(configMap.values()), null, 2));
 } else {
-  fs.writeFileSync(targetFile, JSON.stringify(srcConfigJson, null, 2));
+  writeFileSyncRecursive(targetFile, JSON.stringify(srcConfigJson, null, 2));
+}
+
+function writeFileSyncRecursive(filename, content, charset) {
+  let filepath = filename.replace(/\\/g, '/');
+  let root = '';
+
+  if (filepath[0] === '/') {
+    root = '/';
+    filepath = filepath.slice(1);
+  } else if (filepath[1] === ':') {
+    root = filepath.slice(0, 3);
+    filepath = filepath.slice(3);
+  }
+
+  const folders = filepath.split('/').slice(0, -1);
+
+  folders.reduce(
+    (acc, folder) => {
+      const folderPath = acc + folder + '/';
+      if (!fs.existsSync(folderPath)) {
+        fs.mkdirSync(folderPath);
+      }
+      return folderPath
+    },
+    root
+  );
+
+  fs.writeFileSync(root + filepath, content, charset);
 }
