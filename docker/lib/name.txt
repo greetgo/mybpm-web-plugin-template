@@ -1,2 +1,0 @@
-///MODIFY replace template {PLUGIN_NAME.under}
-dockerhub.mybpm.kz/mybpm-web-with-template
