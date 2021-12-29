@@ -21,7 +21,7 @@ if (fs.existsSync(targetFile)) {
     configMap.set(x.pluginProjectName, x);
   }
 
-  fs.writeFileSync(targetFile, JSON.stringify(Array.from(configMap.values())));
+  fs.writeFileSync(targetFile, JSON.stringify(Array.from(configMap.values()), null, 2));
 } else {
-  fs.writeFileSync(targetFile, JSON.stringify(srcConfigJson));
+  fs.writeFileSync(targetFile, JSON.stringify(srcConfigJson, null, 2));
 }
