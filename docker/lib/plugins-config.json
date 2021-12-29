@@ -1,5 +1,6 @@
 [
   {
+    "___comment_1": "###PIN m1 MODIFY replace template {PLUGIN_NAME.under}",
     "pluginProjectName": "plugins",
     "path": "plugins/mybpm-web-plugin-template/plugin.js",
     "plugins": [
