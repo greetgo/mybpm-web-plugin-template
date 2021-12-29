@@ -15,12 +15,6 @@ before_script:
 stages:
   - buildImages
 
-#cache:
-#  key: '11'
-#  paths:
-#    - node_modules/
-#  policy: pull-push
-
 buildImages:
   extends: .parentMasterJob
   stage: buildImages
