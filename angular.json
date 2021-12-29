@@ -1,4 +1,5 @@
 {
+  "___comment_1": "PIN m1 MODIFY replace template {PLUGIN_NAME.under}",
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
     "analytics": false
