@@ -37,6 +37,7 @@ module.exports = {
         '@angular/router': {singleton: true, eager: true, requiredVersion: '^12.0.0'},
         '@angular/cdk': {singleton: true, eager: true, requiredVersion: '11.2.10'},
         '@angular/material/icon': {singleton: true, eager: true, requiredVersion: '11.2.10'},
+        'ng-zorro-antd': {singleton: true, eager: true, requiredVersion: '11.4.0'},
 
         ...sharedMappings.getDescriptors(),
       })
