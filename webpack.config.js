@@ -38,6 +38,10 @@ module.exports = {
         '@angular/cdk': {singleton: true, eager: true, requiredVersion: '11.2.10'},
         '@angular/material/icon': {singleton: true, eager: true, requiredVersion: '11.2.10'},
         'ng-zorro-antd': {singleton: true, eager: true, requiredVersion: '11.4.0'},
+        'ngx-mask': { singleton: true, eager: true, requiredVersion: '^11.1.5' },
+        'ngx-infinite-scroll': { singleton: true, eager: true, requiredVersion: '10.0.1' },
+        '@ngx-translate/core': { singleton: true, eager: true, requiredVersion: '^13.0.0' },
+        '@ngx-translate/http-loader': { singleton: true, eager: true, requiredVersion: '^6.0.0' },
 
         ...sharedMappings.getDescriptors(),
       })
