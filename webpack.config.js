@@ -42,6 +42,7 @@ module.exports = {
         'ngx-infinite-scroll': { singleton: true, eager: true, requiredVersion: '10.0.1' },
         '@ngx-translate/core': { singleton: true, eager: true, requiredVersion: '^13.0.0' },
         '@ngx-translate/http-loader': { singleton: true, eager: true, requiredVersion: '^6.0.0' },
+        '@angular/flex-layout': { singleton: true, eager: true, requiredVersion: '12.0.0-beta.34' },
 
         ...sharedMappings.getDescriptors(),
       })
